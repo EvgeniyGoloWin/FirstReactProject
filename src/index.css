@@ -1,0 +1,24 @@
+@font-face {
+  font-family: 'MyFont';
+  src: url(./assets/fonts/Larsseit.woff) format('woff');
+  /* other formats include: 'woff2', 'truetype, 'opentype',
+                            'embedded-opentype', and 'svg' */
+}
+@font-face {
+  font-family: 'MyFontBold';
+  src: local('MyFontBold'), url(./assets/fonts/Larsseit-Bold.woff) format('woff');
+  /* other formats include: 'woff2', 'truetype, 'opentype',
+                            'embedded-opentype', and 'svg' */
+}
+
+body {
+  margin: 0;
+
+
+
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
