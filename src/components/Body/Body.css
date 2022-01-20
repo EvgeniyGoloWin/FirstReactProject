@@ -3,8 +3,7 @@ body {
     font-size: 14px;
     color: #22356F;
     margin: 0;
-    /*font-weight: 500;*/
-    /*font-family: "Larsseit-Regular", serif;*/
+    font-weight: 500;
 }
 
 .content_logo {
@@ -27,7 +26,6 @@ body {
 }
 
 .content_logo {
-    font-family: Larsseit, serif;
     font-size: 24px;
     line-height: 27px;
     letter-spacing: -0.035em;
@@ -35,7 +33,6 @@ body {
 }
 
 .main_text {
-    /*font-family: Larsseit, serif;*/
     font-size: 40px;
     line-height: 53px;
     letter-spacing: -0.035em;
@@ -46,7 +43,6 @@ body {
 }
 
 .paragraph {
-    font-family: Larsseit, serif;
     font-size: 24px;
     line-height: 42px;
     color: #22356F;

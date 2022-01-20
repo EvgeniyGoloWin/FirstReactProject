@@ -11,14 +11,12 @@
                             'embedded-opentype', and 'svg' */
 }
 
-body {
+body,root, html {
   margin: 0;
-
-
-
+  font-family: "MyFont";
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
+/*code {*/
+/*  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',*/
+/*    monospace;*/
+/*}*/
