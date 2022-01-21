@@ -1,8 +1,18 @@
-.test{
-    margin-top: 20px;
-    margin-left: 100px;
-    display: flex;
-    flex-direction: column;
+.registration {
     justify-content: center;
     align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.LoginFormWrapper {
+    border:1px solid grey ;
+}
+
+h2 {
+    text-align: center;
+}
+
+input {
+    border-radius: 8px;
 }

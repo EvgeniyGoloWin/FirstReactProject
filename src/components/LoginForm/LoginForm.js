@@ -1,33 +1,41 @@
-import React, {useEffect, useState} from 'react';
-import "./LoginForm.css"
+import React, {useState} from 'react';
+import './LoginForm.css'
 
-function LoginForm(props) {
+const LoginForm = () => {
 
-    const initialState = {
-        name:'',
-        password:'',
-        forgot: '',
+
+    const [state, setState] = useState({
+        name: '',
+        password: '',
+    })
+    console.log(state)
+
+
+    const handlePress = (e)=>{
+        e.preventDefault()
+
     }
-    const [inputValues,setInputsValues] = useState(initialState)
 
-    const handleChange = ()=>{
-        setInputsValues()
+    const handleChangeInput = (e) => {
+
+
+        setState({...state, })
     }
-    useEffect(() => {
 
-    }, [])
-    
+
+
+
 
     return (
-        <>
-            <form className={"test"}>
-                <input name={'name'} placeholder={"name"} value={initialState.name} onChange={handleChange}/>
-                <input placeholder={"password"} value={initialState.password} onChange={handleChange}/>
-                <input placeholder={"forgot"} value={initialState.forgot} onChange={handleChange}/>
-                <button>Press</button>
+        <div className={'LoginFormWrapper'}>
+            <form className={'registration'}>
+                <h2>Welcome to my site</h2>
+                <input name={"name"} value={state.name} onChange={(e)=> handleChangeInput(e)} type="name"/>
+                <input name={"password"} value={state.password} onChange={(e)=> handleChangeInput(e)} type="password"/>
+                <button onClick={(e)=> handlePress(e)} type='button'>Submit</button>
             </form>
-        </>
+        </div>
     );
-}
+};
 
 export default LoginForm;
