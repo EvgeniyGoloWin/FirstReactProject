@@ -1,0 +1,18 @@
+.registration {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.LoginFormWrapper {
+    border:1px solid grey ;
+}
+
+h2 {
+    text-align: center;
+}
+
+input {
+    border-radius: 8px;
+}
