@@ -3,7 +3,6 @@ import './LoginForm.css'
 
 const LoginForm = () => {
 
-
     const [state, setState] = useState({
         name: '',
         password: '',
@@ -11,20 +10,13 @@ const LoginForm = () => {
     console.log(state)
 
 
-    const handlePress = (e)=>{
+    const handlePress  = (e)=>{
         e.preventDefault()
 
     }
-
     const handleChangeInput = (e) => {
-
-
-        setState({...state, })
+        setState({...state,  [e.target.name]:e.target.value})
     }
-
-
-
-
 
     return (
         <div className={'LoginFormWrapper'}>

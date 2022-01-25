@@ -1,12 +1,23 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './Home.css'
 
-const Home = () => {
+function Home() {
+    const [show, setShow] = useState(true);
+    const example = 'test';
+    function toggle() {
+        setShow(!show)
+    }
     return (
-        <div>
+        <>
+            <button className={"btn"} onClick={toggle} >
+                {show ? 'Скрыть' : 'Показать'}
+            </button>
 
-        </div>
+            {
+                show ? <p className={"somePar"}>{example}</p> : null
+            }
+
+        </>
     );
-};
-
+}
 export default Home;
