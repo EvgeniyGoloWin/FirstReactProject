@@ -7,7 +7,6 @@ const LoginForm = () => {
         name: '',
         password: '',
     })
-    console.log(state)
 
 
     const handlePress  = (e)=>{

@@ -4,7 +4,6 @@ import './Slider.css'
 function Slider({arr}) {
     const [slide,setSlide] = useState(0);
     const conditionSlide = arr.length - 1;
-    console.log(conditionSlide)
 
     const prev = ()=> {
         if(slide !== 0 ){

@@ -4,7 +4,6 @@ import './ChangeText.css'
 function ChangeText({AllText}) {
     const [text,setText] = useState(false);
     const listItems = AllText.split('.').map((i) => i !== '' ? <li key={1}>{i}</li> : null );
-    console.log(listItems);
 
     // const lastElement = listItems.pop();
 
